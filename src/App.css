@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh; 
+}
+.singup-wrapper{
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: var(--shadow);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.title{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.middle-text{
+text-align: center;
+color: gray;
+font-size: small;
+cursor: pointer;
+}
+.my-row{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  flex-wrap: wrap;
+  gap: 16px;
+  
+}
+.ant-card-head-title{
+font-size: 1.3rem;
+}
+.my-card{
+  box-shadow: var(--shadow);
+  min-width: 400px;
+}
+.ant-card-body{
+  padding: 0rem 1.5rem 1.4rem 1.5rem !important;
+  margin: 0;
+}
+.custom-datepicker{
+  width: 100%;
+}
+.input-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 70%;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+.input-flex input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+}
+.input-flex input:focus{
+  outline: none;
+}
+.select-input{
+  width:30%;
+  margin-right:10;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem !important;
+  box-shadow: var(--shadow);
+  
+
+  padding: 0.2rem 0.5rem;
+}
+.table{
+  border-radius: 1rem !important;
+}
+.export{
+  background-color: var(--white);
+  border: 1px solid var(--theme) ;
+  color: var(--theme);
+  font-size: 1rem;
+  padding: 0.7rem !important;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: auto !important;
+}
+.import{
+  background-color: var(--theme);
+  color: #fff;
+  border: 1px solid var(--theme) ;
+  padding: 0.7rem !important;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem ;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+  font-size: 1rem;
+}
+.import:hover{
+  background-color: #fff;
+  color: var(--theme);
+  box-shadow: 5px 5px 10px rgba(58 , 128 ,233, 0.5);
+  transition: all 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.export:hover{
+  background-color: var(--theme);
+  color: #fff;
+  box-shadow: 5px 5px 10px rgba(58 , 128 ,233, 0.5);
+  transition: all 0.3s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.import-export{
+  display: flex !important;
+  width: 400px;
+  gap: 1rem;
+  justify-content: center;
+}
+.No-transaction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.no-trans-image{
+  width: 400px;
+  margin: 2rem;
+}
+.no-trans-text{
+  margin-left: 2.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.charts-wrapper{
+  display: flex;
+  height: auto;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 90%;
+  gap: 3rem;
+}
+h2{
+  margin-bottom: 1rem;
+  margin-top: -0.7rem;
+}
+.linechart{
+  display: flex;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  flex-direction: column;
+}
+.piechart{
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  box-shadow: var(--shadow);
 }

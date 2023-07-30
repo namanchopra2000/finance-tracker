@@ -1,0 +1,46 @@
+/* normal button  */
+.outlined{
+    background-color: var(--theme);
+    color: #fff;
+    border: 1px solid var(--theme) ;
+    padding: 0.7rem !important;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem ;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+} 
+/* normal button hover */
+.outlined:hover{
+    background-color: #fff;
+    color: var(--theme);
+    box-shadow: 5px 5px 10px rgba(58 , 128 ,233, 0.5);
+    transition: all 0.3s;
+}
+/* outlined button */
+.btn{
+    background-color: var(--white);
+    border: 1px solid var(--theme) ;
+    color: var(--theme);
+    padding: 0.7rem !important;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: auto !important;
+}
+/* outlined hover */
+.btn:hover{
+    background-color: var(--theme);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(58 , 128 ,233, 0.5);
+    transition: all 0.3s;
+}
